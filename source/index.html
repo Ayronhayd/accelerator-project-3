@@ -1,56 +1,89 @@
 <!DOCTYPE html>
 <html lang="ru" data-validate="html">
 
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Internship</title>
-    <link rel="stylesheet" href="sass/style.scss">
-  </head>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Internship</title>
+  <link rel="stylesheet" href="sass/style.scss">
+</head>
 
-  <body class="page-body">
+<body class="page-body">
 
-    <header data-test="hero">
-      <nav class="hero__nav nav">
-      </nav>
+  <header class="hero" data-test="hero">
 
-      <section class="hero__section">
-        <h1 class="visually-hidden">Проект «Стажировка»</h1>
-      </section>
+    <nav class="hero__nav nav container">
+      <img class="logo" src="/__spritemap#sprite-logo-view" width="30" height="30" aria-current="page"
+        alt="Логотип.">
 
-    </header>
+      <div class="menu">
+        <button class="button button--menu menu__burger--js" type="button" aria-label="Открыть меню.">меню</button>
+        </button>
 
-    <main class="page-main">
-      <section data-test="about">
-        <h2>О проекте «Стажировка»</h2>
-      </section>
-      <div data-test="programs">
-        <h2>Программы</h2>
+        <ul class="menu__list">
+          <li class="menu__item">О проекте</li>
+          <li class="menu__item">Программы
+            <ul class="menu__drop-list">
+              <!-- menu__drop-list--active -->
+              <li class="menu__drop-item">Стажировки</li>
+            </ul>
+          </li>
+          <li class="menu__item">как поехать</li>
+          <li class="menu__item">отзывы</li>
+          <li class="menu__item">новости</li>
+          <li class="menu__item">контакты</li>
+        </ul>
       </div>
-      <div data-test="grant">
-        <h2>Как поехать</h2>
-      </div>
-      <div data-test="news">
-        <h2>Новости и материалы</h2>
-      </div>
-      <div data-test="FAQ">
-        <h2>Вопросы и ответы</h2>
-      </div>
-      <div data-test="reviews">
-        <h2>Отзывы</h2>
-      </div>
-      <div data-test="contacts">
-        <h2>Контакты</h2>
-      </div>
-      <div data-test="form">
-        <h2>Напишите нам</h2>
-      </div>
-    </main>
 
-    <footer data-test="footer">
-      footer
-    </footer>
-    <script type="module" src="js/main.js"></script>
-  </body>
+    </nav>
+
+
+    <section class="hero__section">
+      <h1 class="visually-hidden">Проект «Стажировка»</h1>
+    </section>
+
+  </header>
+
+  <main class="page-main">
+
+    <section data-test="about">
+      <h2>О проекте «Стажировка»</h2>
+    </section>
+
+    <section data-test="programs">
+      <h2>Программы</h2>
+    </section>
+
+    <section data-test="grant">
+      <h2>Как поехать</h2>
+    </section>
+
+    <section data-test="news">
+      <h2>Новости и материалы</h2>
+    </section>
+
+    <section data-test="FAQ">
+      <h2>Вопросы и ответы</h2>
+    </section>
+
+    <section data-test="reviews">
+      <h2>Отзывы</h2>
+    </section>
+
+    <section data-test="contacts">
+      <h2>Контакты</h2>
+    </section>
+
+    <section data-test="form">
+      <h2>Напишите нам</h2>
+    </section>
+
+  </main>
+
+  <footer data-test="footer">
+    footer
+  </footer>
+  <script type="module" src="js/main.js"></script>
+</body>
 
 </html>

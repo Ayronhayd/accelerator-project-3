@@ -1,0 +1,40 @@
+.button {
+  font-family: $font-500;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 14px;
+  letter-spacing: 0.28px;
+  text-transform: uppercase;
+  color: $color-extra;
+  cursor: pointer;
+
+  padding: 20px 71px 20px 21px;
+  border: 1px solid $button;
+  border-radius: 44px;
+
+  position: relative;
+
+  &--menu::after {
+    content: "";
+    top: calc(50% - 4px);
+    right: 19px;
+    background-color: $button-dark-bg;
+    width: 16px;
+    height: 8px;
+    position: absolute;
+    mask-image: url("/__spritemap#sprite-open-menu-view");
+    mask-repeat: no-repeat;
+  }
+
+  &--menu::before {
+    content: "";
+    top: calc(50% - 23px);
+    right: 5px;
+    background-color: $button;
+    border-radius: 50%;
+    width: 46px;
+    height: 46px;
+    position: absolute;
+  }
+}
