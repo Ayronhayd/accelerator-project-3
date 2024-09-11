@@ -1,0 +1,38 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+html {
+  min-width: 320px;
+  min-height: 100%;
+  font-family: $font-400;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: $color-basic;
+  background-color: $bg-color;
+}
+
+.page-body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  margin: 0;
+  min-width: 320px;
+}
+
+.page-main {
+  flex-grow: 1;
+}
