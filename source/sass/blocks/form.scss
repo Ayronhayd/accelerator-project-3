@@ -1,0 +1,126 @@
+.form {
+  padding: 43px 10px 40px;
+  position: relative;
+  background-image: url("/img/form/form-mobile.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center 40px;
+
+  @media (resolution >= 2dppx) {
+    background-image: url("/img/form/form-mobile@2x.png");
+    background-size: cover;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding: 50px 58px;
+    background-image: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 60px 100px;
+    background-image: none;
+  }
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 40px;
+    top: 0;
+    left: 0;
+    background-color: $beige;
+
+    @media (min-width: $tablet-width) {
+      content: none;
+    }
+  }
+
+  &::after {
+    top: auto;
+    bottom: 0;
+  }
+}
+
+.form__container {
+  max-width: 300px;
+
+  @media (min-width: $tablet-width) {
+    max-width: 652px;
+    background-color: #a3aca5;
+    background-image: url("/img/form/form-tablet.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 16px;
+
+    @media (resolution >= 2dppx) {
+      background-image: url("/img/form/form-tablet@2x.png");
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 1240px;
+    background-image: url("/img/form/form-desktop.png");
+
+    @media (resolution >= 2dppx) {
+      background-image: url("/img/form/form-desktop@2x.png");
+    }
+  }
+}
+
+.form__wrapper {
+  margin: 40px auto;
+  padding: 15px 15px 27px;
+  max-width: 300px;
+  background-color: $primary;
+  border-radius: 16px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+    padding: 41px 40px 36px;
+    max-width: 442px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 44px 70px 40px;
+    max-width: 490px;
+  }
+}
+
+.form__title {
+  margin: 0 0 10px;
+  font-size: 18px;
+  line-height: 22px;
+  color: $white;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 0 31px;
+    max-width: 346px;
+    font-size: 28px;
+    line-height: 100%;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 0 34px;
+    font-size: 32px;
+    line-height: 36px;
+  }
+}
+
+.form__text {
+  margin: 0 0 20px;
+  font-size: 14px;
+  line-height: 20px;
+  color: $beige;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 0 40px;
+    max-width: 346px;
+    font-size: 16px;
+  }
+
+  @media (min-width: $desktop-width) {
+    line-height: 26px;
+    min-width: 346px;
+  }
+}

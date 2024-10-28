@@ -1,0 +1,35 @@
+.faq {
+  padding: 51px 15px 49px;
+
+  @media (min-width: $tablet-width) {
+    padding: 50px 45px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 71px 45px 60px;
+  }
+}
+
+.faq__title {
+  margin: 0 0 29px;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 0 40px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 0 71px;
+  }
+}
+
+.faq__list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 auto;
+    max-width: 1028px;
+  }
+}

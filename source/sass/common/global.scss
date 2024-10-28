@@ -5,34 +5,22 @@
 }
 
 img {
-  max-width: 100%;
-  height: auto;
+  object-fit: contain;
 }
 
-a {
-  text-decoration: none;
-}
-
-html {
-  min-width: 320px;
-  min-height: 100%;
-  font-family: $font-400;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 20px;
-  color: $color-basic;
-  background-color: $bg-color;
-}
-
-.page-body {
-  display: flex;
-  flex-direction: column;
-  min-height: 100%;
+.reset-list {
+  padding: 0;
   margin: 0;
-  min-width: 320px;
+  list-style-type: none;
 }
 
-.page-main {
-  flex-grow: 1;
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }

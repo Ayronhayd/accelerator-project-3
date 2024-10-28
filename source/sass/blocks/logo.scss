@@ -1,7 +1,17 @@
 .logo {
-  background-color: $color-white;
-  border-radius: 44px;
+  padding: 11px;
   width: 52px;
   height: 52px;
-  padding: 11px;
+  display: inline-block;
+  background-color: $white;
+  border-radius: 30px;
+  transform: translateY(1px);
+
+  @media (min-width: $tablet-width) {
+    transform: translateY(2px);
+  }
+}
+
+.logo__image {
+  display: block;
 }

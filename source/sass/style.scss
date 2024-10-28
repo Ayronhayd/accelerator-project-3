@@ -1,17 +1,38 @@
-// Vendor
-@import "vendor/normalize";
-
-/* GLOBAL */
+/* Глобальные */
 @import "./common/variables";
 @import "./common/global";
-@import "./common/container";
 @import "./common/fonts";
-@import "./common/visually-hidden";
 
-/* BLOCKS */
-@import "./blocks/logo";
+/* Блоки */
+@import "./blocks/container";
 @import "./blocks/button";
+@import "./blocks/field";
+@import "./blocks/title";
+@import "./blocks/page";
+@import "./blocks/header";
 @import "./blocks/nav";
+@import "./blocks/logo";
 @import "./blocks/hero";
-@import "./blocks/menu";
+@import "./blocks/hero-card";
+@import "./blocks/about";
+@import "./blocks/programs";
+@import "./blocks/program";
+@import "./blocks/grant";
+@import "./blocks/news";
+@import "./blocks/tabs";
+@import "./blocks/news-card";
+@import "./blocks/faq";
+@import "./blocks/accordion";
+@import "./blocks/reviews";
+@import "./blocks/review";
+@import "./blocks/description";
+@import "./blocks/contacts";
+@import "./blocks/form";
+@import "./blocks/form-element";
+@import "./blocks/select";
+@import "./blocks/checkbox";
 @import "./blocks/swiper";
+@import "./blocks/footer";
+@import "./blocks/social";
+@import "./blocks/overlay";
+@import "./blocks/modal";

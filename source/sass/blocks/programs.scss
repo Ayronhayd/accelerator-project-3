@@ -1,0 +1,83 @@
+.programs {
+  padding: 54px 15px 50px;
+
+  @media (min-width: $tablet-width) {
+    padding: 50px 0 48px 45px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 62px 100px 58px;
+  }
+}
+
+.programs__container {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $tablet-width) {
+    max-width: 723px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 15px 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 1240px;
+    gap: 39px 0;
+  }
+}
+
+.programs__title {
+  margin: 2px 0 34px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 0 40px;
+    padding: 3px 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+  }
+}
+
+.programs__link {
+  padding: 6px 5px 5px 30px;
+  min-width: 205px;
+  max-width: 205px;
+  display: inline-block;
+  text-decoration: none;
+  order: 1;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 45px 0 auto;
+    padding: 20px 70px 20px 30px;
+    position: absolute;
+    min-width: 234px;
+    max-width: 234px;
+    top: 3px;
+    right: 0;
+    transform: translateY(-3px);
+    align-content: normal;
+    order: initial;
+
+    &::before {
+      right: 23px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 0 0 auto;
+
+    &::before {
+      right: 23px;
+    }
+  }
+}
+
+.programs__list {
+  display: flex;
+
+  @media (min-width: $desktop-width) {
+    margin-top: 42px;
+  }
+}

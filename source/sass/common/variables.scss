@@ -1,43 +1,17 @@
-// color
-$color-basic: #484848;
-$color-white: #ffffff;
-$color-dark-bg: #f0efe9;
-$color-extra: #316dc2;
-$color-disabled: #a9afb7;
-
-// button color
-$button: #316dc2;
-$button-dark-bg: #ffffff;
-$button-active: #275699;
-
-// Background Colors
-$bg-color: #f0efe9;
-$bg-white: #ffffff;
-$bg-extra: #316dc2;
-
-// Иконки
-$icon-basic: #316dc2;
-$icon-extra: #ffffff;
-
-// form
-$form-basic: #ffffff;
-$form-two: #484848;
-$form-error: #ff5e66;
-$form-disabled: #a9afb7;
-
-// Overlay
-$overlay: rgba(#316dc2, 0.2);
-$overlay-two: rgba(#0d1d33, 0.4);
-
-//  Вьюпорты
+/* Вьюпорты */
 $tablet-width: 768px;
 $desktop-width: 1440px;
 
-//  Шрифты
-$font-200: "Manrope ExtraLight", sans-serif;
-$font-300: "Manrope Light", sans-serif;
-$font-400: "Manrope Regular", sans-serif;
-$font-500: "Manrope Medium", sans-serif;
-$font-600: "Manrope SemiBold", sans-serif;
-$font-700: "Manrope Bold", sans-serif;
-$font-800: "Manrope ExtraBold", sans-serif;
+/* Шрифты */
+$font-family: "Manrope", "Arial", sans-serif;
+
+/* Цвета */
+$primary: #316dc2;
+$white: #ffffff;
+$beige: #f0efe9;
+$text: #484848;
+$dark-overlay: rgba(13, 29, 51, 0.4);
+$blue-overlay: rgba(49, 109, 194, 0.2);
+$state-disabled: #a9afb7;
+$state-active: #275699;
+$state-error: #ff5e66;

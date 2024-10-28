@@ -1,40 +1,160 @@
 .button {
-  font-family: $font-500;
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 14px;
-  letter-spacing: 0.28px;
-  text-transform: uppercase;
-  color: $color-extra;
+  font-family: $font-family;
+  border: none;
+  background-color: transparent;
   cursor: pointer;
+}
 
-  padding: 20px 71px 20px 21px;
-  border: 1px solid $button;
-  border-radius: 44px;
-
+.button--primary {
+  padding: 5px 60px 5px 20px;
   position: relative;
+  min-width: 136px;
+  min-height: 44px;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 100%;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  text-align: left;
+  color: $primary;
+  background-color: $beige;
+  border: 1px solid $primary;
+  border-radius: 30px;
+  align-content: center;
+  transition: background-color 0.3s ease, color 0.3s ease;
 
-  &--menu::after {
-    content: "";
-    top: calc(50% - 4px);
-    right: 19px;
-    background-color: $button-dark-bg;
-    width: 16px;
-    height: 8px;
-    position: absolute;
-    mask-image: url("/__spritemap#sprite-open-menu-view");
-    mask-repeat: no-repeat;
+  @media (min-width: $tablet-width) {
+    padding: 5px 5px 5px 108px;
+    min-height: 56px;
+    font-size: 14px;
   }
 
-  &--menu::before {
+  &::before {
     content: "";
-    top: calc(50% - 23px);
-    right: 5px;
-    background-color: $button;
-    border-radius: 50%;
-    width: 46px;
-    height: 46px;
     position: absolute;
+    width: 8px;
+    height: 8px;
+    top: 50%;
+    right: 17px;
+    transform: translateY(-50%);
+    background-color: $white;
+    mask-image: url("/__spritemap#sprite-arrow-link-view");
+    mask-repeat: no-repeat;
+    z-index: 1;
+    transition: background-color 0.3s ease;
+
+    @media (min-width: $tablet-width) {
+      right: 21px;
+    }
+  }
+
+  &::after {
+    content: "";
+    padding: 12px;
+    position: absolute;
+    width: 34px;
+    height: 34px;
+    top: 50%;
+    right: 4px;
+    transform: translateY(-50%);
+    background-color: $primary;
+    border-radius: 44px;
+
+    @media (min-width: $tablet-width) {
+      width: 46px;
+      height: 46px;
+    }
+  }
+
+  @media (hover: hover) {
+    &:hover {
+      background-color: $primary;
+      color: $white;
+
+      &::before {
+        background-color: $primary;
+        transform: rotate(45deg) translateY(-50%);
+        right: 20px;
+        transition: transform 0.3s ease, right 0.3s ease, background-color 0.3s ease;
+
+        @media (min-width: $tablet-width) {
+          right: 27px;
+        }
+      }
+
+      &::after {
+        background-color: $white;
+      }
+    }
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.7);
+
+    &::before {
+      right: 20px;
+      background-color: rgba(49, 109, 194, 0.7);
+      transform: rotate(45deg) translateY(-50%);
+      transition: background-color 0.3s ease;
+
+      @media (min-width: $tablet-width) {
+        right: 27px;
+      }
+    }
+  }
+
+  &:focus-visible {
+    outline: none;
+    background-color: transparent;
+    color: $primary;
+
+    &::before {
+      background-color: $white;
+      transform: rotate(45deg) translateY(-60%);
+      right: 20px;
+      transition: background-color 0.3s ease;
+
+      @media (min-width: $tablet-width) {
+        right: 27px;
+      }
+    }
+
+    &::after {
+      background-color: $primary;
+    }
+  }
+}
+
+.button__disabled {
+  border: 1px solid $state-disabled;
+  color: $state-disabled;
+  background-color: $state-disabled;
+  opacity: 0.6;
+  pointer-events: none;
+
+  &::after {
+    background-color: $state-disabled;
+  }
+}
+
+.button--circle {
+  padding: 10px;
+  position: relative;
+  width: 30px;
+  height: 30px;
+  display: inline-block;
+  border-radius: 44px;
+  background-color: #316dc2;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: $white;
+    mask-image: url("/__spritemap#sprite-arrow-link-view");
+    mask-repeat: no-repeat;
+    mask-position: center;
+    mask-size: 8px 8px;
   }
 }
